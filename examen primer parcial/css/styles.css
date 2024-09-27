@@ -1,0 +1,362 @@
+/* Root section */
+
+:root {
+    --primary: #2b5a3a;
+    --secondary: #76bd8c;
+    --white: #ffffff;
+    --dark: #000000;
+    --gray: #757575;
+}
+
+/* Hack REM to PX */
+
+html {
+    font-size: 62.5%;
+}
+
+/* General Background */
+
+body {
+    font-size: 16px;
+    background-color: rgb(239, 236, 222);
+}
+
+/* Texts and heading */
+
+        /* Headings */
+
+        h2 {
+            text-align: center;
+            font-family: "Lucida Handwriting", cursive;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2.5rem;
+            line-height: 1.5em;
+            letter-spacing: 0px;
+            text-transform: none;
+        }
+        
+
+        /* Paragraph */
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.7rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary)
+        }
+
+        a:hover {
+            color: var(--secondary) 
+        }
+
+        .subsubtitle {
+            font-size: 1.2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: left;
+            
+        }
+
+
+.award-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+    
+.award-list li {
+    color: #008000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; 
+    padding: 10px; 
+    margin-bottom: 10px;
+}
+
+/* Video */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+/* Main */
+
+.main {
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+/* header image */
+
+.header{
+    text-align: center;
+}
+
+.header img{
+    width: 100%;
+    height: auto;
+    max-width: 50rem;
+}
+
+/*  banner image */
+
+.banner{
+    text-align: center;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+    max-width: 100rem;
+}
+
+/* Normal image */
+
+.normal {
+    text-align: center;
+}
+
+.normal img {
+    width: 100%;
+    height: auto;
+    max-width: 50rem;
+}
+
+.info-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-section p{
+    line-height: 2;
+    text-align: center;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    padding: 4rem;
+}
+
+/* Social media menu */
+
+.sm-section{
+    text-align: center;
+}
+
+.sm-section a {
+    text-decoration:underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; 
+    color: var(--primary);
+    margin-top: 10rem;
+}
+
+
+/* Buttons */
+
+.button {
+    margin: 0 auto;
+    color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    font-size: 2rem;
+    text-align: center;
+    background-color:rgba(239, 236, 222, 0);
+    padding: 2rem;
+    border-color: var(--primary);
+    border-radius: .33rem;
+}
+
+.button:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.press_inq{
+    text-align: center;
+}
+
+.press_inq-button {
+    color: var(--white);
+    background-color: var(--primary);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; 
+    text-align: center;
+    border-radius: 3rem;
+    padding: 1.25rem;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+}
+
+/* Grid enlaces */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    margin: 3rem;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.grid img {
+    height: auto;
+    max-height: 15rem;
+    max-width: 22rem;
+}   
+
+.grid-final {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    margin: 3rem;
+    text-align: center;
+}
+
+.grid-final img {
+    height: auto;
+    max-height: 50rem;
+    max-width: 50rem;
+}
+
+/* Footer */
+
+footer p {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    margin: 3rem;
+    text-align: center;
+    align-items: center;
+}
+
+.grid-footer img {
+    height: auto;
+    max-height: 30rem;
+    max-width: 30rem;
+}
+
+
+  
+  @media (min-width: 1000px) and (max-width: 1200px) {
+    .video-container {
+      width: calc(100% - 60px);
+      margin: 20px auto;
+    }
+    .main {
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid img {
+      max-height: 15rem;
+      max-width: 22rem;
+    }
+    .grid-footer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-footer img {
+      max-height: 20rem;
+      max-width: 20rem;
+    }
+    .grid-final {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-final img {
+      max-height: 30rem;
+      max-width: 30rem;
+    }
+  }
+  
+  @media (min-width: 750px) and (max-width: 999px) {
+    .video-container {
+      width: calc(100% - 80px);
+      margin: 10px auto;
+    }
+    .main {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .grid img {
+      max-height: 30rem;
+      max-width: 30rem;
+    }
+    .grid-footer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-footer img {
+      max-height: 15rem;
+      max-width: 15rem;
+    }
+    .grid-final {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-final img {
+      max-height: 20rem;
+      max-width: 20rem;
+    }
+  }
+  
+  @media (min-width: 400px) and (max-width: 749px) {
+    .video-container {
+      width: calc(100% - 100px);
+      margin: 10px auto;
+    }
+    .main {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .grid img {
+      max-height: 8rem;
+      max-width: 12rem;
+    }
+    .grid-footer {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-footer img {
+      max-height: 10rem;
+      max-width: 10rem;
+    }
+    .grid-final {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-final img {
+      max-height: 15rem;
+      max-width: 15rem;
+    }
+  }
